@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weston.com</title>
+</head>
+<body>
+    <h1>Welcome to my blog site</h1>
+    <h2>hello my name is <%= name %></h2>
+    <p>I am <%= age %> years old</p>
+    <% let dogAge = age * 7 %>
+    <h3>In dog years I am <%= dogAge %> years old</h3>
+    <% if (dogAge > 100) { %>
+        <h4>You are an old dog</h4>
+    <% } else { %>
+        <h4>skill got milk on your breath</h4>
+    <% } %>
+
+    <h2>my favorite fruits:</h2>
+    <ul>
+        <% fruits.forEach(fruit => { %>
+            <li> <%= fruit %> </li>
+       <% }) %>
+    </ul>
+</body>
+</html>
